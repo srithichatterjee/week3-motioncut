@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="amazon-logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="product1.jpg" alt="Product Image 1">
+                </div>
+                <div class="thumbnails">
+                    <img src="product1.jpg" alt="Product Image 1">
+                    <img src="product2.jpg" alt="Product Image 2">
+                    <img src="product3.jpg" alt="Product Image 3">
+                    <img src="product4.jpg" alt="Product Image 4">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <a href="#customer-reviews">100 reviews</a>
+                </div>
+                <p class="product-description">This is a great product that does amazing things.</p>
+                <p class="product-price">$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="quick-view">Quick View</button>
+                <h2>Product Details</h2>
+                <ul class="product-specs">
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="related-product">
+                <img src="related1.jpg" alt="Related Product 1">
+                <p>Related Product 1</p>
+                <p class="product-price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="related-product">
+                <img src="related2.jpg" alt="Related Product 2">
+                <p>Related Product 2</p>
+                <p class="product-price">$59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="customer-reviews" id="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <div class="review-header">
+                    <strong>John Doe</strong>
+                    <span>★★★★☆</span>
+                </div>
+                <p>Great product! Really happy with the quality and the performance.</p>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <strong>Jane Smith</strong>
+                    <span>★★★☆☆</span>
+                </div>
+                <p>Good value for money. Could be improved in some areas.</p>
+            </div>
+            <button class="load-more-reviews">Load More Reviews</button>
+
+            <h3>Write a Review</h3>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review">Review:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Quick View Popup -->
+    <div class="quick-view-popup" id="quickViewPopup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h1>Product Name</h1>
+            <p class="product-description">This is a great product that does amazing things.</p>
+            <p class="product-price">$99.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
